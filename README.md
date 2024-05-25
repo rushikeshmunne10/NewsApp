@@ -67,10 +67,9 @@ Once the development server is running, open your browser and navigate to http:/
 
 To use NewsAPI, you need an API key. Follow these steps to obtain and configure your API key:
 
-    1.Obtain an API key from NewsAPI.
-    2.Add your API KEY to the `.env` file in the project root as follows:
-        ```env
-        REACT_APP_NEWS_API_KEY=your_api_key_here
+1.Obtain an API key from NewsAPI.
+2.Add your API KEY to the `.env` file in the project root as follows:
+    REACT_APP_NEWS_API_KEY=your_api_key_here
 
 ## Contribution
 Contributions are welcome! If you have suggestions for improvements, feel free to create an issue or submit a pull request. Please make sure to follow the project's code style and guidelines.
