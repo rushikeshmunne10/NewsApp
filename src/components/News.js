@@ -35,10 +35,12 @@ export default class News extends Component {
     document.title = tit
   }
 
+
   async updateNews() {
     try {
       this.props.setProgress(10);
-      const res = await fetch(`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=d40405e197544ec791c7eef6f9ad79ba&page=${this.state.page}&pageSize=${this.props.pageSize}`);
+      const apikey = process.env.REACT_APP_APIKEY
+      const res = await fetch(`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${apikey}&page=${this.state.page}&pageSize=${this.props.pageSize}`);
       try {
         this.setState({ loading: true });
       }
